@@ -4,13 +4,13 @@ import { TableComponent } from './table.component';
 
 const routes: Routes = [
   {
-    path: 'table',
+    path: '',
     component: TableComponent
-  }
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class TableRoutingModule { }

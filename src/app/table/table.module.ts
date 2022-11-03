@@ -20,4 +20,4 @@ import {HttpClientModule} from '@angular/common/http';
     CommonModule
   ],
 })
-export class AppModule { }
+export class TableModule {}

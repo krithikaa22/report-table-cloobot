@@ -9,8 +9,8 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'table',
-    loadChildren: () => import('./app.module').then(m => m.AppModule),  
+    path: 'table', 
+    loadChildren: () => import('src/app/table/table.module').then(m => m.TableModule),
   }
 ];
 
