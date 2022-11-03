@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
+import { TableComponent } from './table.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'table',
-    pathMatch: 'full'
-  },
-  {
     path: 'table',
-    loadChildren: () => import('./app.module').then(m => m.AppModule),  
+    component: TableComponent
   }
 ];
 
@@ -18,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class TableRoutingModule { }

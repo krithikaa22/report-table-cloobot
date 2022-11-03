@@ -1,0 +1,77 @@
+
+.maindiv{
+    flex-direction: row;
+    display: flex;
+    width: 100vw;
+    margin: 0;
+    height: 100vh;
+}
+
+.sidemenu{
+    width: 20%;
+    background-color: black;
+    color: white;
+    padding-top: 5vh;
+}
+
+ul{
+    list-style-type: none !important;
+    padding-left: 0%;
+}
+.sidemenu li{
+    padding: 2vh 0vh;
+    font-size: 1.5vw;
+    text-align: center;
+
+}
+.sidemenu li:nth-child(2){
+    background-color: rgb(77, 99, 165);
+}
+
+.table{
+    /* width: 70%; */
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+.table th{
+    background-color: rgb(237, 146, 147);
+    padding: 1vw 3vw;
+    font-size: 1.5vw;
+}
+.table td{
+    background-color: rgb(245, 199, 200);
+    padding: 0.5vw;
+}
+.table tr td:first-child{
+    background-color: rgb(250, 180, 181);
+    padding: 0.5vw;
+}
+
+@media screen and (max-width: 400px){
+    .maindiv{
+        flex-direction: column;
+    }
+    .sidemenu{
+        padding-top: 0vh;
+        width: 100vw;
+    }
+    .sidemenu ul{
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+    .sidemenu li{
+        padding: 3vw;
+        font-size: 3vw;
+    }
+
+    .table th{
+        font-size: 3vw;
+        padding: 2vw 6vw;
+    }
+    .table tr{
+        font-size: 2.5vw;
+    }
+}
