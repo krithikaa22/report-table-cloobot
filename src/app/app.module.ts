@@ -17,7 +17,8 @@ import { TableComponent } from './table/table.component'
   imports: [
     AppRoutingModule,
     DataTablesModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

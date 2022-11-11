@@ -7,25 +7,35 @@
       </ul>
     </div>
     <div class="table">
-      <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+      <table datatable [dtOptions]="dtOptions" class="row-border hover" *ngIf="data.length>0">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>First name</th>
-            <th>Last name</th>
+            <th></th>
+            <th>Country</th>
+            <th>Name</th>
+            <th>Domains</th>
+            <th>Web Pages</th>
+            <th></th>
+            <th>Country</th>
+            <th>Name</th>
+            <th>Domains</th>
+            <th>Web Pages</th>
           </tr>
         </thead>
         <tbody>
-          <tr >
-            <td>1</td>
-            <td>ABC</td>
-            <td>DEF</td>
+          <tr *ngFor="let val of data" >
+            <td>{{val.alpha_two_code}}</td>
+            <td>{{val.country}}</td>
+            <td>{{val.name}}</td>
+            <td>{{val.domains}}</td>
+            <td>{{val.web_pages}}</td>
+            <td>{{val.alpha_two_code}}</td>
+            <td>{{val.country}}</td>
+            <td>{{val.name}}</td>
+            <td>{{val.domains}}</td>
+            <td>{{val.web_pages}}</td>
           </tr>
-          <tr >
-            <td>1</td>
-            <td>ABC</td>
-            <td>DEF</td>
-          </tr>
+          
         </tbody>
       </table>
       

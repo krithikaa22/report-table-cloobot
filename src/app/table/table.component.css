@@ -29,9 +29,11 @@ ul{
 }
 
 .table{
-    /* width: 70%; */
+    width: 70%;
     margin-left: 5vw;
-    margin-top: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vw;
+    overflow-x: scroll;
 }
 
 .table th{
@@ -65,6 +67,14 @@ ul{
     .sidemenu li{
         padding: 3vw;
         font-size: 3vw;
+    }
+
+    .table{
+        width: 100vw;
+    margin-left: 5vw;
+    margin-top: 2vw;
+    margin-right: 5vw;
+    overflow-x: scroll;
     }
 
     .table th{
